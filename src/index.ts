@@ -3,6 +3,11 @@ import { postDb, type Post } from "./database.js";
 
 const app = fastify();
 
+// The Hello world endpoint.
+app.get("/", async () => {
+    return { message: "Hello world!" };
+});
+
 // Read (all posts)
 app.get("/posts", async () => {
     return postDb.posts;
