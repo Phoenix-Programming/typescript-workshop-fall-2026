@@ -6,6 +6,8 @@ export interface Post {
     content: string;
 }
 
+// Usually databases are stored in some persistent format (like a file). Data isn't usually stored
+// in-memory like this but it's simpler.
 export const postDb: { posts: Post[], nextId: number } = {
     posts: [
         { id: 0, likes: 0, title: "First Post", content: "The first post ever made" },

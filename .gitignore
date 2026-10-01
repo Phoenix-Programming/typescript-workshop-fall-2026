@@ -1,2 +1,6 @@
+# Build artifacts (can always be reconstructed)
 dist
+
+# Node modules (large folder of all dependencies)
+# Can be reconstructed (via npm install) from package.json
 node_modules
